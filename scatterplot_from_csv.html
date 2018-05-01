@@ -35,7 +35,7 @@
             
             var yScale = d3.scaleLinear()
                 .domain([
-                    d3.min([0,d3.min(data, function (d) { return d.length_of_stay })])
+                    0
                     , d3.max([0, d3.max(data, function (d) { return d.length_of_stay })])
                     ])
                 .range([h,0])
